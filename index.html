@@ -1,0 +1,35 @@
+<canvas id="gameCanvas"></canvas>
+
+<div id="uiContainer">
+  <div class="top-bar">
+    <div class="hud-card">
+      <div style="font-size:0.8rem;">HENRY: <span id="hpText">100/100</span></div>
+      <div class="bar-bg"><div id="playerHealthBar" class="bar-fill"></div></div>
+    </div>
+
+    <div id="bossHealthContainer" class="hud-card">
+      <div style="font-size:0.8rem; color:#c084fc;">BOSS MUTANTE</div>
+      <div class="bar-bg"><div id="bossHealthBar" class="bar-fill"></div></div>
+    </div>
+
+    <div class="hud-card">
+      <div class="wave-info" id="waveText">ONDA 1</div>
+    </div>
+  </div>
+
+  <div id="bannerText">ONDA 1</div>
+
+  <div class="controls-overlay">
+    <div id="joystickZone"><div id="joystickKnob"></div></div>
+    <div class="action-buttons">
+      <div id="btnPunch" class="btn-action">SOCO<br>(K)</div>
+      <div id="btnShoot" class="btn-action">TIRO<br>(J)</div>
+    </div>
+  </div>
+</div>
+
+<div id="modalOverlay">
+  <h1 id="modalTitle">GAME OVER</h1>
+  <p id="modalDesc">Você morreu!</p>
+  <button class="btn-restart" id="btnRestart">REINICIAR</button>
+</div>
